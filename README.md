@@ -63,3 +63,94 @@ git checkout -b fix-capture-image origin/fix-capture-image
 
 
 
+---
+---
+---
+
+
+# Git Document  
+The simplest way to learn Git 🚀  
+
+## 1. Install Git  
+Download and install Git from the official site:  
+👉 [Git Download](https://git-scm.com/downloads)  
+
+After installation, right-click you will see:  
+- **Git GUI Here**  
+- **Git Bash Here**  
+
+Click **Git Bash Here** to open the terminal and check the version:  
+
+```bash
+git --version
+```
+
+## 2. First-Time Setup
+Before using Git, configure your name and email.
+
+**Add Your Name**
+```bash
+git config user.name "yourname"          # Specific Project  
+git config --global user.name "yourname" # All Projects  
+```
+
+**Add Your Email**
+```bash
+git config user.email "example@example.com"          # Specific Project  
+git config --global user.email "example@example.com" # All Projects  
+```
+
+## 3. Initialize Git Repository
+Navigate to your project folder and initialize Git:
+```bash
+git init
+```
+
+## 4. Git Workflow (4 Steps)
+  1. Untracked File
+  2. Staged Area
+  3. Commit Files
+  4. Status
+
+### Step 1: Untracked File
+When you create a new file, Git marks it as untracked. Check untracked files:
+```bash
+git status
+```
+
+### Step 2: Staged Area
+Add files to the staging area.
+```bash
+git add index.html   # Single file  
+git add -A           # All files  
+git add .            # New + Modified files (not deleted)  
+git add -u           # Modified + Deleted files (not new)  
+```
+
+### Step 3: Commit Files
+Commit saves your work in Git history.
+```bash
+git commit           # Opens editor to write commit message  
+git commit -m "Your message here"  
+git commit -a -m "Commit all tracked changes with message"
+```
+💡 In the editor, type your message, then press: 
+Esc + :wq + Enter to save and exit.
+
+### Step 4: Status
+Check the current state of your repository:
+```bash
+git status
+```
+
+
+
+---
+
+
+
+
+
+
+
+
