@@ -1,13 +1,13 @@
 # Github
 
+## 🔑 Git Credential Helper
+
 ### GitHub Setup & Credential Management
 
 When working with GitHub across multiple projects or accounts, it’s important to configure credentials properly.  
 Git provides a **Credential Helper** to store and manage your login details securely, so you don’t have to enter them every time.
 
 ---
-
-#### 🔑 Git Credential Helper
 
 You can store credentials at either **project level** or **global level**:
 
@@ -24,5 +24,7 @@ git config --global credential.helper store
 ### 👤 Configuring Git User
 ```bash
 git config user.name
+```
+```bash
 git config user.email
 ```
